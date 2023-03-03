@@ -7,7 +7,6 @@ Proyecto final para la materia de Interfaces Gráficas de la Facultad de Ingenie
 * [Angular](https://angular.io/)
 * [ASP.NET](https://dotnet.microsoft.com/es-es/apps/aspnet)
 * [SQL Server](https://www.microsoft.com/es-mx/sql-server/)
-* [NGINX](https://www.nginx.com/)
 
 ### Escuela
 Universidad Autonoma de Nuevo León  
