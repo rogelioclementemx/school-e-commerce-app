@@ -5,15 +5,23 @@
   <div class="col-6 mt-5">
     <h2>{{product.name}}</h2>
     <p style="font-size: 2em;">{{product.price | currency}}</p>
-    <div class="d-flex justify-content-start align-items-center">
-      <i class="fa fa-minus-circle text-warning me-2" style="cursor: pointer; font-size: 2em;"></i>
-      <span class="font-weight-bold" style="font-size: 1.5em;">2</span>
-      <i class="fa fa-plus-circle text-warning ms-2" style="cursor: pointer; font-size: 2em;"></i>
-      <button class="btn btn-outline-secondary ms-4">Agregar al carrito</button>
-    </div>
     <div class="row mt-4">
-      <h4>Descripcion</h4>
+      <h4>Descripción</h4>
       <p>{{product.description}}</p>
     </div>
+    <ng-container *ngIf="accountService.currentUser$ | async as user">
+      <div class="row mt-4">
+        <h4>Vendedor</h4>
+        <p>{{user.displayName}}</p>
+        <a>
+          <i class="fa fa-envelope"></i>
+          {{user.email}}
+        </a>
+        <a>
+          <i class="fa fa-address-book	"></i>
+          {{user.phoneNumber}}
+        </a>
+      </div>
+    </ng-container>
   </div>
 </div>

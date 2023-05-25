@@ -1,0 +1,40 @@
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-md-9 col-lg-7">
+
+        <div class="card" style="border-radius: 15px;">
+          <div class="card-body p-4">
+            <div class="d-flex text-black">
+              <div class="flex-shrink-0">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Anonymous_emblem.svg/320px-Anonymous_emblem.svg.png"
+                  alt="Generic placeholder image" class="img-fluid"
+                  style="width: 180px; border-radius: 10px;">
+              </div>
+              <ng-container *ngIf="accountService.currentUser$ | async as user">
+                <div class="ms-3">
+                  <h5 class="mb-1">{{user.displayName}}</h5>
+                  <p class="mb-2 pb-1" style="color: #2b2a2a;">{{user.email}}</p>
+                  <p class="mb-2 pb-1" style="color: #2b2a2a;">+52 {{user.phoneNumber}}</p>
+                  <div class="d-flex rounded-3 p-2 mb-2"
+                    style="background-color: #efefef;">
+                    <div>
+                      <p class="small text-muted mb-1">Productos</p>
+                      <p class="mb-0">0</p>
+                    </div>
+                    <div class="px-3">
+                      <p class="small text-muted mb-1">Seguidores</p>
+                      <p class="mb-0">0</p>
+                    </div>
+                    <div>
+                      <p class="small text-muted mb-1">Rating</p>
+                      <p class="mb-0">0</p>
+                    </div>
+                  </div>
+                </div>
+              </ng-container>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

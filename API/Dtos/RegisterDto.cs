@@ -7,6 +7,12 @@ namespace API.Dtos
         [Required]
         public string DisplayName { get; set; }
         [Required]
+        public string PhoneNumber { get; set; }
+        [Required]
+        public string UserAddress { get; set; }
+        [Required]
+        public string School { get; set; }
+        [Required]
         [EmailAddress]
         public string Email { get; set; }
         [Required]

@@ -4,6 +4,7 @@ import { ShopService } from '../shop.service';
 import { ActivatedRoute } from '@angular/router';
 import { Breadcrumb } from 'xng-breadcrumb/lib/types/breadcrumb';
 import { BreadcrumbService } from 'xng-breadcrumb';
+import { AccountService } from 'src/app/account/account.service';
 
 @Component({
   selector: 'app-product-details',
@@ -16,7 +17,8 @@ export class ProductDetailsComponent implements OnInit {
   constructor(
     private shopService: ShopService,
     private activatedRoute: ActivatedRoute,
-    private bcService: BreadcrumbService
+    private bcService: BreadcrumbService,
+    public accountService: AccountService
   ) {}
 
   ngOnInit(): void {
