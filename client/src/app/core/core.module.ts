@@ -4,12 +4,14 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { RouterModule } from '@angular/router';
 import { SectionHeaderComponent } from './section-header/section-header.component';
 import { BreadcrumbModule } from 'xng-breadcrumb';
+import { SupportComponent } from './support/support.component';
 
 
 @NgModule({
   declarations: [
     NavBarComponent,
-    SectionHeaderComponent
+    SectionHeaderComponent,
+    SupportComponent
   ],
   imports: [
     CommonModule,
